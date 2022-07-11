@@ -7,11 +7,19 @@ SELECT birth_date
 FROM employee
 ORDER BY birth_date DESC
 LIMIT 1;
+
+OR
+
+SELECT MAX(birth_date) FROM employee;
 -- 3
 SELECT birth_date
 FROM employee
 ORDER BY birth_date
 LIMIT 1;
+
+OR 
+
+SELECT MIN(birth_date) FROM employee;
 -- 4
 SELECT * FROM employee
 WHERE reports_to = 2;
