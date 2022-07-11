@@ -5,10 +5,18 @@ WHERE billing_country = 'USA';
 SELECT total FROM invoice
 ORDER BY total DESC
 LIMIT 1;
+
+OR
+
+SELECT MAX(total) FROM invoice;
 -- 3
 SELECT total FROM invoice
 ORDER BY total
 LIMIT 1;
+
+OR
+
+SELECT MIN(total) FROM invoice;
 -- 4
 SELECT * FROM invoice
 WHERE total > 5;
